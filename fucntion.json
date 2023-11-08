@@ -1,0 +1,22 @@
+{
+  "name": "get_tax_deductions",
+  "description": "Anaylze customers answers and determin what tax deduction they qualiffy for",
+  "parameters": {
+    "type": "object",
+    "Deduction": {
+      "Qualification": {
+        "type": "string",
+        "description": "The conditions in which one qualifies to take this deduction"
+      },
+      "User_Qualifies": {
+        "type": "boolean",
+        "description": " true or false depending on if the user qualifies"
+      },
+      "Total_Deduction": {
+        "type": "number",
+        "desscription": "the amount the user qualifies for"
+      }
+    },
+    "required": ["Deduction"]
+  }
+}
